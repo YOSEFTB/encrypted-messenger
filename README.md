@@ -20,3 +20,6 @@ Communication takes place over TCP using a custom binary protocol composed of fi
 
 Encryption is implemented using a combination of RSA and AES. Users exchange symmetric AES keys that are encrypted using RSA, and they communicate using that key for encryption. Actual encrytion is handled by the system. The system blocks message sending if no keys have been exchanged. See documentation about RSA and AES for more details about the role of public/private keys, and symmetric keys.
 
+## Defensive Programming 
+
+In this project, emphasis was place on defensive programming, and care was taken to design components in a way to avoid vulnerabilities. Additionally, a report was submitted with 5 distinct vulnerabilities in the protocol for the project, with analysis of the weakness, its exploitability, and ways to mitigate or eliminate the vulnerability. Written in table form, with detailed analysis of each vulnerability and how to exploit it.
